@@ -39,7 +39,7 @@ header {
 
 main {
     padding: 4rem;
-    height: 100%;
+    min-height: calc(100vh - 60px);
 
     .icons {
         margin-top: 1rem;
@@ -60,10 +60,56 @@ main {
         margin-top: 20vh;
     }
 }    
+}
 
+// about page
 
+.about-info {
+    display: grid;
+    grid-template-areas:
+    'bioimage bio bio'
+    'info1 info2 info3';
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+
+    .bio-image {
+        grid-area: bioimage;
+        margin: auto;
+        border-radius: 50%;
+        border: $secondary-color 3px solid;
+    }
+    
+    .bio {
+        grid-area: bio;
+        font-size: 1.5rem;
+    }
+    
+    .info-1 {
+        grid-area: info1;
+    }
+    
+    .info-2 {
+        grid-area: info2;
+    }
+    
+    .info-3 {
+        grid-area: info3;
+    }
+    
+    .info {
+        background: lighten($primary-color, 5);
+        padding: 0.5rem;
+        border-bottom: $secondary-color 5px solid;
+    }
+}
+
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: darken($primary-color, 10);
+    color: $primary-color;
+    height: 60px;
 
 
 }
-
 

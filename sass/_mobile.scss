@@ -24,7 +24,6 @@
     div.menu-branding {
        width: 100%;
 
-        
     }
     ul.menu-nav {
         height: 75vh;
@@ -36,6 +35,16 @@
         transform: translate3d(-100%, 0, 0);
     }
 
+    .about-info {
+        grid-template-areas:
+        'bioimage'
+        'bio'
+        'info1'
+        'info2'
+        'info3';
+
+        grid-template-columns: 1fr;
+    }
    
 }
 
