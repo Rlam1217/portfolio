@@ -82,6 +82,9 @@ main {
     .bio {
         grid-area: bio;
         font-size: 1.5rem;
+        p {
+            padding-bottom: 1rem;
+        }
     }
     
     .info-1 {
@@ -108,7 +111,8 @@ main {
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.7rem;
+    grid-gap: 1rem;
+    
 
     img {
         width: 100%;
@@ -119,6 +123,10 @@ main {
             border-color: $secondary-color;
             @include easeOut;
         }
+    }
+
+    a {
+        padding: 0;
     }
 }
 
@@ -152,7 +160,7 @@ main {
 
 .btn {
     display: block;
-    padding: 0.5rem 1 rem;
+    padding: 0.5rem 1rem;
     border: 0;
     margin-bottom: 0.3rem;
     &:hover {
@@ -165,12 +173,18 @@ main {
     @extend .btn;
     background: darken($primary-color, 50);
     color: #fff;
+    &:hover {
+        color: #333;
+    }
 }
 
 .btn-light {
     @extend .btn;
     background: lighten($primary-color, 50);
     color: #333;
+    &:hover {
+        color: #fff;
+    }
 }
 
 #main-footer {
