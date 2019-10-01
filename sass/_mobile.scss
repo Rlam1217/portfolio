@@ -53,7 +53,6 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
-   
 }
 
 
@@ -65,5 +64,25 @@
     
     .projects {
         grid-template-columns: 1fr;
+    }
+
+    main#contact h1 {
+        font-size: 4rem;
+    }
+
+    .boxes {
+        justify-content:center;
+
+        div { max-width: 380px;
+            .text-secondary {
+                font-size: 1.5rem;
+            }
+            a {
+                font-size: 1.5rem;
+            }
+            .number {
+                font-size: 1.5rem;
+            }
+        }    
     }
 }

@@ -148,9 +148,12 @@ main {
         &:hover {
             padding: 0.5rem 1.5rem;
             background: $secondary-color;
-            color: black;
+            color: #000;
             span {
                 color: #fff;
+            }
+            a {
+                color: #000;
             }
         }
     }
